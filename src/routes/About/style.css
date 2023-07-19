@@ -1,0 +1,60 @@
+.migrateSmallLine {
+    height: 10px;
+    width: 7%;
+    border-bottom: 3px solid #05092A;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+
+  #aboutTitleContainer{
+    margin: 20px;
+  }
+
+  #aboutSkillsContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    padding: 5%;
+    margin-top: 50px;
+    text-align: start;
+  }
+
+  .skillsTitle{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  #skillsContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 40vh;
+  }
+
+  .skill{
+    background-color: #E7E7E7;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    cursor: default;
+    transition: 500ms;
+  }
+
+  .skill:hover{
+    background-color: #FFC83D;
+    transform: scale(1.1);
+  }
+
+  @media screen and (max-width: 1000px) {
+    #aboutSkillsContainer{
+      flex-direction: column-reverse;
+      text-align: center;
+    }
+
+    #skillsContainer{
+      width: 100%;
+      justify-content: center;
+
+    }
+}
